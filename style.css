@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color: #164863;
+    --primary-color: #427D9D;
+    --secondary-color: #9BBEC8;
+    --text-color: #DDF2FD;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-color);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 600px;
+    border-radius: 1rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    background-color: var(--primary-color);
+}
+
+.header{
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.header p{
+    color: var(--text-color);
+}
+.header span{
+    color: var(--bg-color);
+}
+
+.middle{
+    padding: 2rem 0;
+}
+.middle textarea{
+    width: 34rem;
+    height: 200px;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: .5rem;
+    padding: 1rem;
+    color: var(--text-color);
+    text-decoration: none;
+}
+.middle textarea::placeholder{
+    color: var(--text-color);
+} 
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: auto;
+}
+.lang{
+    text-align: center;
+}
+.button{
+    text-align: center;
+}
+select{
+    width: 400px;
+    height: 40px;
+    border-radius: 2rem;
+    padding: 0 1rem;
+    background-color: var(--secondary-color);
+    appearance: none;
+    background-image: url();
+    font-size: 15px;
+}
+button{
+    width: 100px;
+    height: 40px;
+    border-radius: 2rem;
+    border: none;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+select:hover{
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+button:hover{
+    cursor: pointer;
+    border: 2px solid black;
+    scale: .9;
+}
+
+
+@media only screen and (max-width: 400px) {
+
+    .card{
+        width: 350px;
+        padding: 2rem 1rem;
+    }
+    .header{
+        font-size: 30px;
+    }
+    .middle textarea{
+        width: 20rem;
+        height: 250px;
+        padding: 1rem;
+    }
+    select{
+        width: 210px;
+        height: 30px;
+        padding: 0 1rem;
+        font-size: 10px;
+    }
+    button{
+        width: 60px;
+        height: 30px;
+        border-radius: 2rem;
+        font-size: 10px
+    }
+
+  }
+  
+  
+  @media only screen and (min-width: 401px) and (max-width: 600px) {
+    
+    .card{
+        width: 400px;
+        padding: 2rem 1rem;
+    }
+    .header{
+        font-size: 35px;
+    }
+    .middle textarea{
+        width: 23rem;
+        height: 250px;
+        padding: 1rem;
+    }
+    select{
+        width: 250px;
+        height: 30px;
+        padding: 0 1rem;
+        font-size: 12px;
+    }
+    button{
+        width: 70px;
+        height: 30px;
+        border-radius: 2rem;
+        font-size: 12px
+    }
+  }
+  
